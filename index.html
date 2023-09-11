@@ -1,0 +1,41 @@
+<!----------------------------------------------------------------------------
+ - Copyright (C) Kyler Mellor - All Rights Reserved
+ - Unauthorized copying of this file, via any medium is strictly prohibited.
+ - 
+ - Written by Kyler Mellor, September 2023
+ ---------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Noto Sans">
+        <title>I or L</title>
+    </head>
+
+    <body>
+        <div class="allContents">
+            <div class="mainContents">
+                <h1 class="heading">I or L</h1><br>
+                <div class="mainForm">
+                    <input id="password" type="text" autofocus></input>
+                    <div id="okButton"><img src="assets/magnifying-glass-solid-white.svg" id="okImg"></img></div>
+                </div>
+            
+                <br>
+                <p id="displayPass">Check i or l here</p>
+            </div>
+        </div>
+
+        <div class="themePickerBox">
+            <button class="theme" id="green" onclick="themeClassic()">Classic</p>
+            <button class="theme" id="mint" onclick="themeMint()">Mint</p>
+            <button class="theme" id="java" onclick="themeJava()">Java</p>
+            <button class="theme" id="charcoal" onclick="themeCharcoal()">Charcoal</p>
+        </div>
+
+        <p id="copyright">Copyright © 2023 Kyler Mellor</p>
+    </body>
+
+    <script src="script.js"></script>
+</html>

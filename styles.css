@@ -1,0 +1,140 @@
+/*****************************************************************************
+ * Copyright (C) Kyler Mellor - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * 
+ * Written by Kyler Mellor, September 2023
+ ****************************************************************************/
+
+html, body {
+    margin:0px;
+    height:100%;
+}
+
+body {
+    background-color: #89B6A5;
+}
+
+p {
+    font-family: 'Noto Sans';
+    color: white;
+}
+
+.heading {
+    color: white;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Consolas';
+}
+
+.allContents {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100%; */
+    
+    /* border: 3px solid red;  */
+    /* padding: 16px; */
+    padding: 0px;
+    align-items: center;
+
+}  
+
+.mainContents {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 800px;
+
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: row;
+}
+
+#displayPass {
+    /* width: 100%; */
+    text-align: center;
+
+    font-family: "Consolas";
+    font-size: 1.5em;
+    color: white;
+    height: 28.8px;
+}
+
+#password {
+    height: 50px;
+    width: 100%;
+    display: inline;
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    outline: none;
+    z-index: 2;
+}
+
+#okButton {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6A706E;
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+#okImg {
+    width: 100%;
+    padding: 0px;
+}
+
+.themePickerBox
+{
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    height: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    justify-content: space-around;
+}
+
+button.theme {
+    height: 50px;
+    width: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Noto Sans";
+    font-size: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border-radius: 5px;
+    /* box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5); */
+    border: none;
+    outline: none;
+}
+
+p#copyright {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.4);
+
+    font-size: 0.8em;
+}
