@@ -138,3 +138,7 @@ p#copyright {
 
     font-size: 0.8em;
 }
+
+::placeholder {
+    color: #C4C4C4;
+}
