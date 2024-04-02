@@ -6,25 +6,30 @@
  ---------------------------------------------------------------------------->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Noto Sans">
-
+        <link rel="stylesheet" href="css/styles.css" title="default">
+        <link rel="alternate stylesheet" href="css/thin.css" title="thin">
+        
         <!-- Google Font Family links below -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Noto Sans">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>I or L Password Checker</title>
     </head>
 
     <body>
         <div class="allContents">
-            <div class="mainContents">
+            <div class="mainContents" role="main">
                 <h1 class="heading">I or L</h1><br>
                 <div class="mainForm">
-                    <input id="password" type="text" placeholder="Paste your password phrase here" autofocus></input>
-                    <div id="okButton"><img src="assets/magnifying-glass-solid-white.svg" id="okImg"></img></div>
+                    
+                    <label for="password"> <input id="password" type="text" placeholder="Paste your password phrase here" autofocus></input></label>
+                    <div id="okButton"><img src="assets/magnifying-glass-solid-white.svg" id="okImg" alt="search icon magnifying glass"></img></div>
                 </div>
             
                 <br>
@@ -39,8 +44,9 @@
             <button class="theme" id="charcoal" onclick="themeCharcoal()">Charcoal</p>
         </div>
 
-        <p id="copyright">Copyright © 2023 Kyler Mellor</p>
+        <footer><p id="copyright">Copyright © 2023 Kyler Mellor</p></footer>
     </body>
 
     <script src="script.js"></script>
+    <script src="dynamicLayout.js"></script>
 </html>
