@@ -1,0 +1,51 @@
+/*****************************************************************************
+ * Copyright (C) Kyler Mellor - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * 
+ * Written by Kyler Mellor, September 2023
+ ****************************************************************************/
+
+ .allContents {
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh; */
+    /* width: 100%; */
+    
+    /* border: 3px solid red;  */
+    /* padding: 16px; */
+    /* padding: 0px;
+    align-items: center; */
+
+}  
+
+.mainContents {
+    /* position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 80%;
+
+    margin-top: 10px; 
+    margin-bottom: 10px; */
+}
+
+.mainForm {
+    /* display: flex;
+    flex-direction: row; */
+}
+
+#displayPass {
+    /* width: 100%; */
+    /* text-align: center;
+
+    font-family: "Inconsolata", "Consolas", monospace;
+    font-optical-sizing: auto;
+    font-size: 1.5em;
+    font-style: normal;
+    color: white;
+    height: 28.8px; */
+}
+
+::placeholder {
+    color: transparent;
+}
