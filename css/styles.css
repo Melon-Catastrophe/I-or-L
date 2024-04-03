@@ -7,7 +7,7 @@
 
 html, body {
     margin:0px;
-    height:100%;
+    height:99%;
 }
 
 body {
@@ -27,27 +27,29 @@ p {
 }
 
 .allContents {
-    display: flex;
+    display: contents;
     flex-direction: column;
-    height: 100vh;
-    /* width: 100%; */
+    height: 99%;
+    width: 99%;
     
-    /* border: 3px solid red;  */
-    /* padding: 16px; */
+    border: 3px solid red; 
     padding: 0px;
     align-items: center;
 
 }  
 
 .mainContents {
-    position: absolute;
+    position: relative;
+    top: 40%;
+    width: 800px;
+    margin: auto;
+    /* position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 800px;
 
     margin-top: 10px; 
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
 }
 
 .mainForm {
@@ -56,7 +58,6 @@ p {
 }
 
 #displayPass {
-    /* width: 100%; */
     text-align: center;
 
     font-family: "Inconsolata", "Consolas", monospace;
@@ -80,6 +81,31 @@ p {
     font-size: 1.5em;
     outline: none;
     z-index: 2;
+}
+
+/* @media screen and (orientation: portrait) {
+    .mainContents {
+        width: 90%;
+        height: 10%;
+        align-content: center;
+    }
+} */
+
+@media screen and (max-width: 900px) {
+    .mainContents {
+        display:block;
+        align-self: center;
+        top: 20%;
+        width: 90%;
+        height: 10%;
+        margin: auto;
+    }
+
+    .allContents {
+        width: 100%;
+        align-items: center;
+        margin: auto;
+    }
 }
 
 #okButton {
@@ -128,6 +154,19 @@ button.theme {
     /* box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5); */
     border: none;
     outline: none;
+}
+
+@media screen and (max-width: 500px) {
+    .themePickerBox {
+        flex-direction: column;
+        align-items: center;
+        bottom: 10%;
+        height: 20em;
+    }
+
+    button.theme {
+        width: 55%;
+    }
 }
 
 p#copyright {
