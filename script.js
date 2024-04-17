@@ -15,7 +15,7 @@ function changeText()
             span.innerText = phrase[i];
             if (isNaN(phrase[i]))
             {
-                span.style.color = "black";
+                span.style.color = "white";
                 // console.log("not number");
             }
             else
@@ -38,9 +38,11 @@ function changeTextOnEnter(e)
 
 function themeClassic()
 {
-    document.body.style.backgroundColor = "#89B6A5";
+    // document.body.style.backgroundColor = "#89B6A5";
+    document.body.style.backgroundColor = "#4E7E6B";
+    // document.getElementsByClassName("body").style.backgroundColor = "#4E7E6B"
     document.getElementById("okButton").style.backgroundColor = "#6A706E";
-    document.getElementById("okImg").src="assets/magnifying-glass-solid-white.svg"
+    document.getElementById("okImg").src="assets/images/magnifying-glass-solid-white.svg"
     if (typeof(Storage) != "undefined")
     {
         localStorage.setItem("theme", "classic");
@@ -51,7 +53,7 @@ function themeMint()
 {
     document.body.style.backgroundColor = "#BCCFA9";
     document.getElementById("okButton").style.backgroundColor = "#50514F";
-    document.getElementById("okImg").src="assets/magnifying-glass-solid-white.svg"
+    document.getElementById("okImg").src="assets/images/magnifying-glass-solid-white.svg"
     if (typeof(Storage) != "undefined")
     {
         localStorage.setItem("theme", "mint");
@@ -62,7 +64,7 @@ function themeJava()
 {
     document.body.style.backgroundColor = "#C3B299";
     document.getElementById("okButton").style.backgroundColor = "#50514F";
-    document.getElementById("okImg").src="assets/magnifying-glass-solid-white.svg"
+    document.getElementById("okImg").src="assets/images/magnifying-glass-solid-white.svg"
     if (typeof(Storage) != "undefined")
     {
         localStorage.setItem("theme", "java");
@@ -73,7 +75,7 @@ function themeCharcoal()
 {
     document.body.style.backgroundColor = "#50514F";
     document.getElementById("okButton").style.backgroundColor = "#FFFCFF";
-    document.getElementById("okImg").src="assets/magnifying-glass-solid.svg"
+    document.getElementById("okImg").src="assets/images/magnifying-glass-solid.svg"
     if (typeof(Storage) != "undefined")
     {
         localStorage.setItem("theme", "charcoal");

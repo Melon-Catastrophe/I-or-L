@@ -1,0 +1,57 @@
+{
+    "short_name": "I or L",
+    "name": "I or L Password Checker",
+    "icons": [
+        {
+            "src": "/assets/images/icons/pwa-icon_x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+          },
+      {
+        "src": "/assets/images/icons/pwa-icon_x128.png",
+        "type": "image/png",
+        "sizes": "128x128",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/assets/images/icons/pwa-icon_x192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/assets/images/icons/pwa-icon_x384.png",
+        "type": "image/png",
+        "sizes": "384x384",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/assets/images/icons/pwa-icon_x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      }
+    ],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#4E7E6B",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#4E7E6B",
+    "description": "I or L Password Checker",
+    "screenshots": [
+      {
+        "src": "/assets/images/screenshots/screenshot_wide.png",
+        "type": "image/png",
+        "sizes": "1920x1079",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/assets/images/screenshots/screenshot_narrow.png",
+        "type": "image/png",
+        "sizes": "1080x2018",
+        "form_factor": "narrow"
+      }
+    ]
+  }

@@ -8,14 +8,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="icon" href="favicon.ico" />
         <link rel="stylesheet" href="css/styles.css" title="default">
         <link rel="alternate stylesheet" href="css/thin.css" title="thin">
         
         <!-- Google Font Family links below -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Noto Sans">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Noto Sans"> -->
+        <link rel="preload" as="font" type="font/ttf" href="/assets/text/Noto_Sans/NotoSans-Regular.ttf" crossorigin="anonymous">
+        <link rel="preload" as="font" type="font/ttf" href="/assets/text/Roboto/Roboto-Regular.ttf" crossorigin="anonymous">
+        <link rel="preload" as="font" type="font/ttf" href="/assets/text/Poppins/Poppins-Regular.ttf" crossorigin="anonymous">
+        <link rel="preload" as="font" type="font/ttf" href="/assets/text/Inconsolata/static/Inconsolata-Regular.ttf" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet"> -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Check if your generated password contains an I or an L. Simply paste your password and see what the password actually contains!">
@@ -24,14 +30,14 @@
         <title>I or L Password Checker</title>
     </head>
 
-    <body>
+    <body class="body">
         <div class="allContents">
             <div class="mainContents" role="main">
                 <h1 class="heading">I or L</h1><br>
                 <div class="mainForm">
                     
                     <label for="password"></label> <input id="password" type="text" placeholder="Paste your password phrase here" autofocus></input>
-                    <div id="okButton"><img src="assets/magnifying-glass-solid-white.svg" id="okImg" alt="search icon magnifying glass"></img></div>
+                    <div id="okButton"><img src="assets/images/magnifying-glass-solid-white.svg" id="okImg" alt="search icon magnifying glass" width="50" height="50"></img></div>
                 </div>
             
                 <br>
@@ -51,5 +57,4 @@
     </body>
 
     <script src="script.js"></script>
-    <!-- <script src="dynamicLayout.js"></script> -->
 </html>
