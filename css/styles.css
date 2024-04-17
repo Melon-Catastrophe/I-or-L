@@ -5,6 +5,26 @@
  * Written by Kyler Mellor, September 2023
  ****************************************************************************/
 
+@font-face {
+    font-family: "Noto Sans";
+    src: url("/assets/text/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/text/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/assets/text/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/assets/text/Inconsolata/static/Inconsolata-Regular.ttf") format("truetype");
+}
+
 html, body {
     margin:0px;
     height:90%;     /* If the page has scrolling, then disable this line. */
@@ -127,7 +147,7 @@ button.theme {
     outline: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     .themePickerBox {
         position: relative;
         flex-direction: column;
@@ -155,12 +175,13 @@ button.theme {
     width: 100%;
     text-align: center;
     margin: 0px;
-    color: rgba(0, 0, 0, 0.4);
+    /* color: rgba(0, 0, 0, 0.4); */
+    color: white;
 
     font-size: 0.8em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .mainContents {
         display: relative;
         /* left: 0;
@@ -190,7 +211,7 @@ button.theme {
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 800px) {
+@media screen and (orientation: landscape) and (max-width: 950px) {
     .mainContents {
         margin-top: 0px;
     }
