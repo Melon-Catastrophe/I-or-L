@@ -84,32 +84,32 @@ function themeCharcoal()
 
 // Code for reading theme preferences below.
 // Check for browser support.
-if (typeof(Storage) != "undefined")
-{
-    // Retrieve theme preference.
-    var theme = localStorage.getItem("theme");
-    if (theme == "classic")
-    {
-        themeClassic();
-    }
-    else if (theme == "mint")
-    {
-        themeMint();
-    }
-    else if (theme == "java")
-    {
-        themeJava();
-    }
-    else if (theme == "charcoal")
-    {
-        themeCharcoal();
-    }
-    else
-    {
-        themeClassic();
-    }
-}
+// if (typeof(Storage) != "undefined")
+// {
+//     // Retrieve theme preference.
+//     var theme = localStorage.getItem("theme");
+//     if (theme == "classic")
+//     {
+//         themeClassic();
+//     }
+//     else if (theme == "mint")
+//     {
+//         themeMint();
+//     }
+//     else if (theme == "java")
+//     {
+//         themeJava();
+//     }
+//     else if (theme == "charcoal")
+//     {
+//         themeCharcoal();
+//     }
+//     else
+//     {
+//         themeClassic();
+//     }
+// }
 
 // Listener for password input and search icon click.
-document.getElementById("okImg").addEventListener("click", changeText);
-document.getElementById("password").addEventListener('keypress', changeTextOnEnter);
+// document.getElementById("okImg").addEventListener("click", changeText);
+// document.getElementById("password").addEventListener('keypress', changeTextOnEnter);

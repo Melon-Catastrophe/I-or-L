@@ -31,7 +31,7 @@ html, body {
 }
 
 body {
-    background-color: #89B6A5;
+    background-color: #4A7E68;
 }
 
 p {
@@ -39,14 +39,49 @@ p {
     color: white;
 }
 
-.heading {
+.header {
+    position: sticky;
+    top: 0px;
+    height: 4em;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Noto Sans";
+    background-color: #44504B;
+    color: white;
+    text-align: left;
+}
+
+#header-left {
+    position: relative;
+    left: 12%;
+}
+
+#header-right {
+    position: relative;
+    right: 12%;
+}
+
+.menu-icon {
+    width: 2em;
+}
+
+.test {
+    height: 100px;
+}
+
+/* .heading {
     color: white;
     margin: 20px;
     text-align: center;
     font-family: 'Consolas';
-}
+} */
 
-.allContents {
+/* .allContents {
     display: contents;
     flex-direction: column;
     height: 99%;
@@ -56,9 +91,9 @@ p {
     padding: 0px;
     align-items: center;
 
-}  
+}   */
 
-.mainContents {
+/* .mainContents {
     position: relative;
     top: 40%;
     width: 800px;
@@ -142,10 +177,10 @@ button.theme {
     background-color: rgba(0, 0, 0, 0.4);
 
     border-radius: 5px;
-    /* box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5); */
+    // box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
     border: none;
     outline: none;
-}
+} */
 
 @media screen and (max-width: 950px) {
     .themePickerBox {
