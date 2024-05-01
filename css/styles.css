@@ -120,11 +120,15 @@ p {
 }
 
 .large-title {
-
+    font-size: 50px;
 }
 
 .title {
+    font-size: 40px;
+}
 
+.small-title {
+    font-size: 30px;
 }
 
 .detector-content > p.description-text {
@@ -223,7 +227,15 @@ button {
     text-align: center;
 }
 
+#additional-content > h1 {
+    font-family: inherit;
+    color: inherit;
+    text-align: center;
+}
+
 #additional-content > h2 {
+    margin-top: 60px;
+
     font-family: inherit;
     color: inherit;
     text-align: center;
