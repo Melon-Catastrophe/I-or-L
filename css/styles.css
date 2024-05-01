@@ -21,13 +21,43 @@
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: "Inconsolata";
     src: url("/assets/text/Inconsolata/static/Inconsolata-Regular.ttf") format("truetype");
+}
+
+.roboto {
+    font-family: "Roboto";
+    color: white;
+}
+
+.roboto-black {
+    font-family: "Roboto";
+    color: black;
+}
+
+.noto-sans {
+    font-family: "Noto Sans";
+    color: white;
+}
+
+.noto-sans-black {
+    font-family: "Noto Sans";
+    color: black;
+}
+
+.poppins {
+    font-family: "Poppins";
+    color: white;
+}
+
+.poppins-black {
+    font-family: "Poppins";
+    color: black;
 }
 
 html, body {
     margin:0px;
-    height:90%;     /* If the page has scrolling, then disable this line. */
+    /* height:90%;     If the page has scrolling, then disable this line. */
 }
 
 body {
@@ -37,6 +67,12 @@ body {
 p {
     font-family: 'Noto Sans';
     color: white;
+}
+
+.centered-icons {
+    width: 100px;
+    display: block;
+    margin: auto;
 }
 
 .header {
@@ -51,28 +87,164 @@ p {
     align-items: center;
 
     font-family: "Noto Sans";
+    font-size: 20px;
     background-color: #44504B;
     color: white;
     text-align: left;
+
+    z-index: 10;
 }
 
 #header-left {
+    font-weight: 600;
     position: relative;
-    left: 12%;
+    left: 2%;
 }
 
 #header-right {
     position: relative;
-    right: 12%;
+    right: 2%;
 }
 
 .menu-icon {
     width: 2em;
 }
 
-.test {
-    height: 100px;
+.detector-content {
+    width: 75%;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 0px;
+    text-align: center;
+    /* border: 3px solid blue; */
 }
+
+.large-title {
+
+}
+
+.title {
+
+}
+
+.detector-content > p.description-text {
+    width: 500px;
+    margin: auto;
+    font-size: 20px;
+}
+
+div#phrase-checker {
+    display: flex;
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input#phrase {
+    flex-grow: 1;
+}
+
+input {
+    height: 50px;
+    /* width: 90%; */
+    width: auto;
+    /* margin: auto; */
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    outline: none;
+    z-index: 2;
+}
+
+button#submit {
+    margin-left: 0px;
+    /* width: 150px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    padding: 10px;
+    background-color: #46C1AC;
+    
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    outline: none;
+}
+
+.display-phrase-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.display-phrase-container > img {
+    width: 70px;
+    margin: auto;
+}
+
+.display-phrase-container > p {
+    font-size: 20px;
+    padding: 0px;
+}
+
+#additional-content {
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    background-color: white;
+    color: black;
+}
+
+#additional-content > p {
+    font-family: inherit;
+    color: inherit;
+    text-align: center;
+}
+
+#additional-content > h2 {
+    font-family: inherit;
+    color: inherit;
+    text-align: center;
+}
+
+
+
+/* #password {
+    height: 50px;
+    width: 100%;
+    display: inline;
+    padding: 10px;
+    
+    border-radius: 10px;
+    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    outline: none;
+    z-index: 2;
+} */
 
 /* .heading {
     color: white;
