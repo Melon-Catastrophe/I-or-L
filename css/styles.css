@@ -21,21 +21,25 @@
 @font-face {
     font-family: "Noto Sans";
     src: url("/assets/text/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Roboto";
     src: url("/assets/text/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Poppins";
     src: url("/assets/text/Poppins/Poppins-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Inconsolata";
     src: url("/assets/text/Inconsolata/static/Inconsolata-Regular.ttf") format("truetype");
+    font-display: fallback;
 }
 
 .fade-in{-webkit-animation:fade-in .5s linear both;animation:fade-in .5s linear both}
@@ -81,6 +85,7 @@ body {
 
 p {
     font-family: 'Noto Sans';
+    font-size: 20px;
     color: white;
 }
 
@@ -118,7 +123,7 @@ p {
 .header {
     position: sticky;
     top: 0px;
-    height: 4em;
+    height: 2em + 40px;
     width: 100%;
 
     display: flex;
@@ -143,14 +148,15 @@ p {
 
 #header-right {
     position: relative;
-    right: 2%;
+    right: 0%;
 }
 
 /* Dropdown Button */
 .dropbtn {
     width: 2em;
-    box-sizing: content-box;
+    margin-right: 0px;
     padding: 17px 20px 12px 20px;
+    box-sizing: content-box;
     transition: background-color 0.5s;
 }
 
@@ -159,6 +165,7 @@ p {
     display: none;
     position: absolute;
     right: 0;
+    margin: 0px;
     background-color: #424242;
     min-width: 250px;
     /* height: 0px; */
@@ -282,7 +289,6 @@ button#submit {
 }
 
 .display-phrase-container {
-    /* width: 100%; */
     margin: auto;
     margin-top: 70px;
     margin-bottom: 80px;
@@ -294,7 +300,7 @@ button#submit {
 }
 
 .display-phrase-container > p {
-    font-size: 20px;
+    font-size: 25px;
     padding: 0px;
 }
 @media screen and (max-width: 950px) {
@@ -337,8 +343,8 @@ button#submit {
     box-sizing: border-box;
     padding-top: 70px;
     padding-bottom: 200px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
     
     background-color: white;
     color: black;
@@ -347,7 +353,7 @@ button#submit {
 #additional-content > p {
     font-family: inherit;
     color: inherit;
-    text-align: center;
+    text-align: start;
 }
 
 #additional-content > h1 {
@@ -409,7 +415,7 @@ button#submit {
     color: inherit;
 }
 
-.footer-col {
+.footer-right {
     flex-grow: 1;
     display: block;
     font-family: inherit;
@@ -417,29 +423,29 @@ button#submit {
     color: inherit;
 }
 
-.footer-col p {
-    padding: 8px 5%;
+.footer-right p {
+    padding: 8px 5%;    /* The 5% is for the buttons */
 }
 
-.footer-col>p {
+.footer-right>p {
     /* The column titles are in a div, and therefore not direct p children.*/
     margin: 0px;
     border-radius: 7px;
 }
 
-.footer-col>div>p {
+.footer-right>div>p {
     margin-bottom: 0px;
     padding-bottom: 8px;
     /* Keep this here, or it might break if we decide to change it.*/
 }
 
-.footer-col p:first-child {
+.footer-right p:first-child {
     font-weight: bold;
     margin-top: 0px;
     padding-top: 0px;
 }
 
-.footer-col>p:hover {
+.footer-right>p:hover {
     background-color: #46C1AC;
     transition: background-color 0.9s;
 }
@@ -459,6 +465,10 @@ button#submit {
     margin-bottom: 0px;
     padding-left: 15px;
     box-sizing: border-box;
+}
+
+.footer-left p {
+    padding: 8px 0px;
 }
 
 #col1-top {
@@ -483,10 +493,10 @@ button#submit {
     #footer {
         flex-flow: column wrap;
     }
-    .footer-col p {
+    .footer-right p {
         padding: 8px 0px;
     }
-    .footer-col {
+    .footer-right {
         margin-bottom: 20px;
     }
     #footer p {
@@ -494,212 +504,8 @@ button#submit {
         max-width: 150px;
     }
 }
-/* #password {
-    height: 50px;
-    width: 100%;
-    display: inline;
-    padding: 10px;
-    
-    border-radius: 10px;
-    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
-    border: none;
-    font-family: 'Roboto';
-    font-size: 1.5em;
-    outline: none;
-    z-index: 2;
-} */
-
-/* .heading {
-    color: white;
-    margin: 20px;
-    text-align: center;
-    font-family: 'Consolas';
-} */
-
-/* .allContents {
-    display: contents;
-    flex-direction: column;
-    height: 99%;
-    width: 99%;
-    
-    border: 3px solid red; 
-    padding: 0px;
-    align-items: center;
-
-}   */
-
-/* .mainContents {
-    position: relative;
-    top: 40%;
-    width: 800px;
-    margin: auto;
-}
-
-.mainForm {
-    display: flex;
-    flex-direction: row;
-}
-
-#displayPass {
-    text-align: center;
-    position: relative;
-
-    font-family: "Inconsolata", "Consolas", monospace;
-    font-optical-sizing: auto;
-    font-size: 1.5em;
-    font-style: normal;
-    color: white;
-    height: 28.8px;
-}
-
-#password {
-    height: 50px;
-    width: 100%;
-    display: inline;
-    padding: 10px;
-    
-    border-radius: 10px;
-    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
-    border: none;
-    font-family: 'Roboto';
-    font-size: 1.5em;
-    outline: none;
-    z-index: 2;
-}
-
-#okButton {
-    display: flex;
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #6A706E;
-    box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
-}
-
-#okImg {
-    width: 100%;
-    padding: 0px;
-}
-
-.themePickerBox
-{
-    display: flex;
-    position: fixed;
-    bottom: 5%;
-    right: 0;
-    left: 0;
-    height: 50px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    justify-content: space-around;
-}
-
-button.theme {
-    height: 50px;
-    width: 100px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    font-family: "Noto Sans";
-    font-size: 1em;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-
-    border-radius: 5px;
-    // box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
-    border: none;
-    outline: none;
-} */
-
-@media screen and (max-width: 950px) {
-    .themePickerBox {
-        position: relative;
-        flex-direction: column;
-        align-items: center;
-        /* bottom: 10%; */
-        height: 20em;
-        padding-top: 10px;
-        margin-top: 40px;
-    }
-
-    .allContents {
-        position: fixed;
-    }
-
-    button.theme {
-        width: 55%;
-    }
-}
-
-#copyright {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    /* margin-top: 50px; */
-    color: white;
-
-    font-size: 1em;
-}
-
-@media screen and (max-width: 950px) {
-    .mainContents {
-        display: relative;
-        /* left: 0;
-        right: 0; */
-        bottom: 0;
-        top: 0;
-        align-self: center;
-        /* top: 20%; */
-        width: 90%;
-        /* height: 10%; */
-        margin: auto;
-        margin-top: 20%;
-    }
-
-    .allContents {
-        width: 100%;
-        align-items: center;
-        margin: auto;
-    }
-
-    #copyright {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-}
-
-@media screen and (orientation: landscape) and (max-width: 950px) {
-    .mainContents {
-        margin-top: 0px;
-    }
-
-    #password {
-        height: 30px;
-    }
-
-    #okButton {
-        height: 30px;
-        width: 30px;
-    }
-
-    #copyright { 
-        position: relative;
-        bottom: 0;
-    }
-}
 
 ::placeholder {
-    color: #C4C4C4;
+    color: rgb(185, 185, 185);
+    /* opacity: 0.5; */
 }

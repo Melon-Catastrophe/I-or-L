@@ -21,7 +21,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="manifest" href="/manifest.webmanifest">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet"> -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Check if automatically generated password or phrase contains an I or an L. Simply paste your password and see what the password actually contains!">
@@ -34,7 +33,7 @@
         <div class="header">
             <div id="header-left">I or L Character Checker</div>
             <div id="header-right" class="dropdown">
-                <div class="dropbtn"><img src="/assets/images/icons/menu-bars-solid-dark.svg" alt="menu" /></div>
+                <div class="dropbtn"><img src="/assets/images/icons/menu-bars-solid-dark.svg" width="40" height="40" alt="menu" /></div>
                 <div class="dropdown-content roboto fade-in">
                     <a href="#">Home</a>
                     <a href="#faq">FAQ</a>
@@ -56,14 +55,14 @@
             </div>
             
             <div class="roboto display-phrase-container">
-                <img src="/assets/images/icons/file-lines-solid-dark.svg" id="display-phrase-icon" alt="menu" />
-                <p>Entered Phrase Here</p>
+                <img src="/assets/images/icons/file-lines-solid-dark.svg" width="70" height="70" id="display-phrase-icon" alt="menu" />
+                <p id="display-phrase">Entered Phrase Here</p>
             </div>
         </div>
         
         <div id="faq"></div>
         <div id="additional-content" class="poppins-black">
-            <img src="assets/images/icons/question-circle-teal.svg" class="centered-icons" width="50px" alt="question mark icon">
+            <img src="assets/images/icons/question-circle-teal.svg" class="centered-icons" width="100px" height="100px" alt="question mark icon">
             <h1 class="title">Frequently Asked Questions</h1>
             
             <h2 class="small-title">What is this?</h2>
@@ -72,8 +71,8 @@
             need to tell differences between similar characters like I do, then you're in the right place.</p>
 
             <h2 class="small-title">How do I use this tool?</h2>
-            <p>This tool is easy to use! Simply paste your phrase into the text box above and click 'Submit'! It's that easy! Your
-            password will be displayed underneath where it was input. Your password will be displayed in an easy-to-read Consolas
+            <p>Simply paste your phrase into the text box above and click 'Submit'! It's that easy! Your
+            password will be displayed underneath where it was input. Your password will be displayed in an easy-to-read monospace
             font. This style of font easily distinguishes between i and l characters. To distinguish number characters such as '1',
             numbers are highlighted red.</p>
 
@@ -88,9 +87,9 @@
         </div>
 
         <div id="footer" class="roboto-black" id="col1">
-            <section class="footer-left footer-col">
+            <section class="footer-left">
                 <div id="col1-top">
-                    <img id="I-or-L-icon" src="assets/images/icons/pwa-icon_x128.png" />
+                    <img id="I-or-L-icon" src="assets/images/icons/pwa-icon_x128.png" width="80px" height="80px" alt="I or L Logo"/>
                     <h2>I or L Character Detector</h2>
                 </div>
                 <p>
@@ -100,13 +99,13 @@
                 </p>
             </section>
             
-            <section class="footer-col" id="col2">
+            <section class="footer-right" id="col2">
                 <div><p>Overview</p></div>
                 <p>Purpose</p>
                 <p><a href="#faq">FAQ</a></p>
-                <p>Latest Updates</p>
+                <!-- <p>Latest Updates</p> -->
             </section>
-            <section class="footer-col" id="col3">
+            <section class="footer-right" id="col3">
                 <div><p>Connect with us</p></div>
                 <p>My main site</p>
                 <p>Social media</p>
