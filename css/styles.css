@@ -121,6 +121,7 @@ p {
 
 
 .header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0px;
     height: 2em + 40px;
@@ -143,7 +144,7 @@ p {
 #header-left {
     font-weight: 600;
     position: relative;
-    left: 2%;
+    left: 20px;
 }
 
 #header-right {
@@ -267,7 +268,8 @@ button {
     box-sizing: border-box;
     box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.5);
     padding: 0px 10px;
-    background-color: #46C1AC;
+    /* background-color: #46C1AC; */
+    background-color: #39A28F;
 
     border: none;
     border-radius: 10px;
@@ -503,6 +505,26 @@ button#submit {
         /* min-width: 0px; */
         max-width: 150px;
     }
+}
+
+::-webkit-input-placeholder {
+    color: rgb(185, 185, 185);
+    /* opacity: 0.5; */
+}
+
+::-moz-placeholder {
+    color: rgb(185, 185, 185);
+    /* opacity: 0.5; */
+}
+
+:-ms-input-placeholder {
+    color: rgb(185, 185, 185);
+    /* opacity: 0.5; */
+}
+
+::-ms-input-placeholder {
+    color: rgb(185, 185, 185);
+    /* opacity: 0.5; */
 }
 
 ::placeholder {
