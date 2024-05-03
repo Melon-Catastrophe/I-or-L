@@ -17,7 +17,11 @@
 
 @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
+/**************************************************
+                    
+                    FONTS
 
+**************************************************/
 @font-face {
     font-family: "Noto Sans";
     src: url("/assets/text/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
@@ -74,6 +78,16 @@
     color: black;
 }
 
+/**************************************************
+                    
+                BASIC CLASSES
+
+**************************************************/
+:root {
+    /* Test that the scroll is smooth on Safari and on mobile. */
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin:0px;
     /* height:90%;     If the page has scrolling, then disable this line. */
@@ -120,6 +134,13 @@ p {
 }
 
 
+
+
+/**************************************************
+                    
+                    HEADER
+
+**************************************************/
 .header {
     position: -webkit-sticky;
     position: sticky;
@@ -134,7 +155,7 @@ p {
 
     font-family: "Noto Sans";
     font-size: 20px;
-    background-color: #44504B;
+    background-color: rgba(68, 80, 75, 1.0);
     color: white;
     text-align: left;
 
@@ -211,22 +232,24 @@ p {
 
 
 
+/**************************************************
+                    
+                DETECTOR CONTENT
 
+**************************************************/
 .detector-content {
     width: 75%;
     margin: auto;
     margin-top: 6%;
     margin-bottom: 0px;
     text-align: center;
-    /* background-color:rgba(38, 65, 53, 0.733); */
-    /* background-color: rgba(112, 151, 143, 0.7); */
 }
 
-.detector-content > p.description-text {
+.detector-content p.description-text {
     margin: auto;
+    margin: 30px 0px;
     font-size: 20px;
 }
-
 
 #phrase-checker {
     display: flex;
@@ -238,13 +261,8 @@ p {
 
     margin-top: 20px;
     margin-bottom: 20px;
-
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    /* align-items: center; */
     padding: 20px 0px;
     box-sizing: border-box;
-    /* background-color: darkblue; */
 }
 
 input {
@@ -305,15 +323,6 @@ button#submit {
     font-size: 25px;
     padding: 0px;
 }
-@media screen and (max-width: 950px) {
-    .detector-content {
-        
-    }
-    #phrase-checker {
-        /* background-color: rgb(235, 96, 72);
-        border: 3px solid rgb(31, 165, 255); */
-    }
-}
 
 @media screen and (max-width: 400px) {
     #phrase-checker {
@@ -337,13 +346,17 @@ button#submit {
 
 
 
+/**************************************************
+                    
+                ADDITIONAL CONTENT
 
+**************************************************/
 #additional-content {
     width: 75%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
     box-sizing: border-box;
-    padding-top: 70px;
+    padding-top: 0px;
     padding-bottom: 200px;
     padding-left: 70px;
     padding-right: 70px;
@@ -352,24 +365,32 @@ button#submit {
     color: black;
 }
 
-#additional-content > p {
+#additional-content p {
     font-family: inherit;
     color: inherit;
     text-align: start;
 }
 
-#additional-content > h1 {
+#additional-content h1 {
     font-family: inherit;
     color: inherit;
     text-align: center;
 }
 
-#additional-content > h2 {
+#additional-content h2 {
     margin-top: 100px;
 
     font-family: inherit;
     color: inherit;
     text-align: center;
+}
+
+#additional-content section:first-child {
+    padding-top: 70px;
+}
+
+#additional-content section:first-child:target {
+    scroll-margin-top: 100px;
 }
 
 @media screen and (max-width: 950px) {
@@ -378,9 +399,24 @@ button#submit {
     }
 }
 
+a[id="faq"]:target ~ #additional-content section.panel {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+.panel {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
 
 
 
+
+/**************************************************
+                    
+                    FOOTER
+
+**************************************************/
 #footer {
     display: flex;
     flex-flow: row;
@@ -393,13 +429,13 @@ button#submit {
     padding: 30px 5% 30px 5%;
 
     box-sizing: border-box;
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.35);
     background-color: white;
     color: black;
     font-size: 18px;
 }
 
-/* For hyperlink style removal. */
+/* For hyperlink style removal in footer. */
 #footer a {
     text-decoration: none;
     color: black;
@@ -455,13 +491,11 @@ button#submit {
 .footer-left {
     display: inline;
     font-size: 16px;
-    /* margin-bottom: 20px; */
     /* margin-right: 30%; */
     flex-grow: 7;    
 }
 
 .footer-left h2 {
-    /* display: inline-block; */
     max-width: 190px;
     margin-top: 0px;
     margin-bottom: 0px;
