@@ -372,13 +372,13 @@ button#submit {
     text-align: start;
 }
 
-#additional-content h1 {
+#additional-content h2 {
     font-family: inherit;
     color: inherit;
     text-align: center;
 }
 
-#additional-content h2 {
+#additional-content h3 {
     margin-top: 50px;
 
     font-family: inherit;
